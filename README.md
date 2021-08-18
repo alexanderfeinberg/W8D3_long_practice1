@@ -163,8 +163,8 @@ function wait(ms) {
 function?**
 
 You would want to use the `wait` function to execute code after the `Promise`
-returned from the function is fulfilled. The `wait` function turns the
-asynchronous `setTimeout` function into a `Promise`.
+returned from the function is fulfilled. The `wait` function wraps the
+asynchronous `setTimeout` in a `Promise`.
 
 Try using the `wait` function. Create another function that, when invoked, will
 trigger a two-second pause caused by the `wait` function and will display a
